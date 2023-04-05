@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
+import ProductPage from "./screens/Product";
 
 function App() {
   return (
     <div>
-      <h1>Hello, World!</h1>
+      <ProductPage />
     </div>
   );
 }
