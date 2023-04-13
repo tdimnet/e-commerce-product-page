@@ -1,4 +1,5 @@
 import Button from '.'
+import Basket from "../../icons/Basket"
 
 export default {
   title: "Components/Button",
@@ -13,6 +14,7 @@ export const Primary = {
 
 export const WithIcon = {
   args: {
-    content: "Add to cart"
+    content: "Add to cart",
+    icon: Basket
   }
 }
