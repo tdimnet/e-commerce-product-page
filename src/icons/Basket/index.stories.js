@@ -5,6 +5,12 @@ export default {
   component: Basket,
 };
 
-export const Primary = {
+export const DefaultBasket = {
   args: {},
+};
+
+export const WhiteBasket = {
+  args: {
+    color: 'white'
+  },
 };
