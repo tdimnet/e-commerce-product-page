@@ -1,11 +1,10 @@
-import ProductImage from '.'
+import ProductImage from ".";
 
 export default {
   title: "Components/ProductImage",
-  component: ProductImage
-}
+  component: ProductImage,
+};
 
 export const Mobile = {
-  args: {}
-}
-
+  args: {},
+};

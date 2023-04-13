@@ -1,8 +1,8 @@
 function Component({ content, icon }) {
   if (icon) {
     return (
-      <button className="h-14 w-80 rounded-md bg-orange-400 text-white relative">
-        <span className="absolute left-20">{icon({ color: 'white'}) }</span>
+      <button className="relative h-14 w-80 rounded-md bg-orange-400 text-white">
+        <span className="absolute left-20">{icon({ color: "white" })}</span>
         {content}
       </button>
     );

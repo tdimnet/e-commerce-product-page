@@ -1,6 +1,5 @@
 function Component() {
-  return <h1>Product Image</h1>
+  return <h1>Product Image</h1>;
 }
 
-export default Component
-
+export default Component;

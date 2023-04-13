@@ -1,10 +1,10 @@
 function Icon({ color }) {
   function handleIconColor(color) {
-    switch(color) {
-      case 'white':
-        return "#fff"
+    switch (color) {
+      case "white":
+        return "#fff";
       default:
-        return "#69707D"
+        return "#69707D";
     }
   }
 

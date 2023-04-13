@@ -11,6 +11,6 @@ export const DefaultBasket = {
 
 export const WhiteBasket = {
   args: {
-    color: 'white'
+    color: "white",
   },
 };
