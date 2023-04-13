@@ -1,11 +1,10 @@
-import Basket from '.'
+import Basket from ".";
 
 export default {
-  title: 'Icons/Basket',
-  component: Basket
-}
+  title: "Icons/Basket",
+  component: Basket,
+};
 
 export const Primary = {
-  args: {}
-}
-
+  args: {},
+};

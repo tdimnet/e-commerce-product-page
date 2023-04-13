@@ -1,4 +1,4 @@
-import Navigation from "../../components/Navigation"
+import Navigation from "../../components/Navigation";
 
 function Screen() {
   return (
@@ -8,8 +8,7 @@ function Screen() {
         <h1>Allez les bleux !</h1>
       </main>
     </div>
-  )
+  );
 }
 
-export default Screen
-
+export default Screen;

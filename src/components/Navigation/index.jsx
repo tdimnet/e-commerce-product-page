@@ -1,5 +1,5 @@
-import Basket from '../../icons/Basket'
-import Burger from '../../icons/Burger'
+import Basket from "../../icons/Basket";
+import Burger from "../../icons/Burger";
 
 function Component() {
   return (
@@ -8,16 +8,13 @@ function Component() {
         <li>
           <Burger />
         </li>
-        <li>
-          Sneakers
-        </li>
+        <li>Sneakers</li>
         <li>
           <Basket />
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Component
-
+export default Component;

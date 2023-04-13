@@ -1,9 +1,8 @@
-import Navigation from '.'
+import Navigation from ".";
 
 export default {
-  title: 'Components/Navigation',
-  component: Navigation
-}
+  title: "Components/Navigation",
+  component: Navigation,
+};
 
-export const Primary = {}
-
+export const Primary = {};
