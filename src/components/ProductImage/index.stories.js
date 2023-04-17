@@ -5,6 +5,9 @@ export default {
   component: ProductImage,
 };
 
-export const Mobile = {
-  args: {},
+export const Component = {
+  args: {
+    alt: "Sneaker",
+    src: "./src/images/image-product-1.jpg",
+  },
 };
