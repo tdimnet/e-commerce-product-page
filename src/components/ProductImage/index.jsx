@@ -1,5 +1,5 @@
-function Component() {
-  return <h1>Product Image</h1>;
+function Component({ src, alt }) {
+  return <img src={src} alt={alt} />;
 }
 
 export default Component;
