@@ -15,8 +15,8 @@ function Screen() {
       <main>
         <ProductImage src={image} alt="A sneaker" />
         <section className="p-6">
-          <BrandName name="sneaker company" />
-          <ProductName name="fall limited edition sneakers" />
+          <BrandName name="sneaker company" css="mb-4" />
+          <ProductName name="fall limited edition sneakers" css="mb-4" />
           <ProductDescription content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
         </section>
       </main>
