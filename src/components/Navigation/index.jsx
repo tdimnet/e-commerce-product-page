@@ -5,7 +5,7 @@ import UserImage from "../UserImage";
 
 function Component() {
   return (
-    <nav className="max-w-6xl pb-11 md:mx-auto md:border-b md:border-slate-300">
+    <nav className="max-w-6xl md:mx-auto md:border-b md:border-slate-300">
       <ul className="flex items-baseline justify-evenly md:items-center">
         <li className="mr-4 md:hidden">
           <Burger />
