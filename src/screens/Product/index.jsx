@@ -5,6 +5,9 @@ import ProductName from "../../components/ProductName";
 import ProductDescription from "../../components/ProductDescription";
 import ProductPrice from "../../components/ProductPrice"
 import Discount from "../../components/Discount";
+import AddToCardBtn from "../../components/Button"
+
+import BasketIcon from "../../icons/Basket"
 
 
 import image from "../../images/image-product-1.jpg";
@@ -26,6 +29,7 @@ function Screen() {
             <Discount discountValue={"50%"}  />
             <ProductPrice hasDiscount={true} price="$250" css="col-span-2 text-right" />
           </div>
+          <AddToCardBtn content="Add to cart" icon={BasketIcon}  />
         </section>
       </main>
     </div>
