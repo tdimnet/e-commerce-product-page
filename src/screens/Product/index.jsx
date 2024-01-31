@@ -21,10 +21,10 @@ function Screen() {
           <BrandName name="sneaker company" css="mb-4" />
           <ProductName name="fall limited edition sneakers" css="mb-4" />
           <ProductDescription content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
-          <div className="flex">
+          <div className="grid grid-cols-4 items-center mt-3">
             <ProductPrice hasDiscount={false} price="$125"  />
             <Discount discountValue={"50%"}  />
-            <ProductPrice hasDiscount={true} price="$250" />
+            <ProductPrice hasDiscount={true} price="$250" css="col-span-2 text-right" />
           </div>
         </section>
       </main>

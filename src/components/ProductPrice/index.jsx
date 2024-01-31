@@ -1,12 +1,12 @@
-function Component({ price, hasDiscount }) {
+function Component({ price, hasDiscount, css }) {
   if (hasDiscount) {
     return (
-      <p className="line-through">{price}</p>
+      <p className={`${css} line-through`}>{price}</p>
     )
   }
 
   return (
-    <p className="font-bold text-lg">{price}</p>
+    <p className={`${css} font-bold text-lg`}>{price}</p>
   )
 }
 
