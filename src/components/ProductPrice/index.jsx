@@ -1,7 +1,7 @@
 function Component({ price, hasDiscount }) {
   if (hasDiscount) {
     return (
-      <p>{price}</p>
+      <p className="line-through">{price}</p>
     )
   }
 
