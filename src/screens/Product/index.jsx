@@ -1,12 +1,12 @@
-import Navigation from "../../components/Navigation";
-import ProductImage from "../../components/ProductImage";
-import BrandName from "../../components/BrandName";
-import ProductName from "../../components/ProductName";
-import ProductDescription from "../../components/ProductDescription";
-import ProductPrice from "../../components/ProductPrice"
-import Discount from "../../components/Discount";
 import AddToCardBtn from "../../components/Button"
+import BrandName from "../../components/BrandName";
 import Counter from "../../components/Counter"
+import Discount from "../../components/Discount";
+import Navigation from "../../components/Navigation";
+import ProductDescription from "../../components/ProductDescription";
+import ProductImage from "../../components/ProductImage";
+import ProductName from "../../components/ProductName";
+import ProductPrice from "../../components/ProductPrice"
 
 import BasketIcon from "../../icons/Basket"
 

@@ -1,6 +1,8 @@
-function Icon() {
+function Icon({ onClick }) {
   return (
     <svg
+      onClick={onClick}
+      className="cursor-pointer"
       width="12"
       height="4"
       xmlns="http://www.w3.org/2000/svg"
