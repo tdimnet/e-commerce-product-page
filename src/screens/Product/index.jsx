@@ -16,13 +16,13 @@ function Screen() {
       <div className="p-6">
         <Navigation />
       </div>
-      <main>
+      <main className="md:grid md:grid-cols-2 md:max-w-6xl md:mx-auto">
         <ProductImage src={image} alt="A sneaker" />
-        <section className="p-6">
-          <BrandName name="sneaker company" css="mb-4" />
-          <ProductName name="fall limited edition sneakers" css="mb-4" />
+        <section className="p-6 grid gap-4">
+          <BrandName name="sneaker company" />
+          <ProductName name="fall limited edition sneakers" />
           <ProductDescription content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
-          <div className="mt-3 grid grid-cols-4 items-center">
+          <div className="grid grid-cols-4 items-center">
             <ProductPrice hasDiscount={false} price="$125" />
             <Discount discountValue={"50%"} />
             <ProductPrice
