@@ -1,12 +1,15 @@
 import { useState } from "react";
 
+import { useCart } from "../../contexts/Cart";
+
 import Counter from "../../components/Counter";
 import Button from "../../components/Button";
 
 import BasketIcon from "../../icons/Basket";
 
 function Container() {
-  const [counter, setCounter] = useState(0);
+  const { addToCart } = useCart()
+    const [counter, setCounter] = useState(0);
 
   function handleCounter(operation) {
     if (operation === "minus" && counter > 0) {
@@ -17,13 +20,17 @@ function Container() {
   }
 
   function addProductToCart() {
-    console.log(counter)
+    addToCart(counter)
   }
 
   return (
     <>
       <Counter onClick={handleCounter} counter={counter} />
-      <Button onClick={addProductToCart} content="Add to Cart" icon={BasketIcon} />
+      <Button
+        onClick={addProductToCart}
+        content="Add to Cart"
+        icon={BasketIcon}
+      />
     </>
   );
 }
