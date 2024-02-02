@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { CartProvider } from "./contexts/CartContext";
+
 import ProductPage from "./screens/Product";
 
 function App() {
   return (
-    <div>
+    <CartProvider>
       <ProductPage />
-    </div>
+    </CartProvider>
   );
 }
 
