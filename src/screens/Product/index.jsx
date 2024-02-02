@@ -1,6 +1,4 @@
-import AddToCardBtn from "../../components/Button"
 import BrandName from "../../components/BrandName";
-import Counter from "../../components/Counter"
 import Discount from "../../components/Discount";
 import Navigation from "../../components/Navigation";
 import ProductDescription from "../../components/ProductDescription";
@@ -8,8 +6,7 @@ import ProductImage from "../../components/ProductImage";
 import ProductName from "../../components/ProductName";
 import ProductPrice from "../../components/ProductPrice"
 
-import BasketIcon from "../../icons/Basket"
-
+import AddToCartContainer from "../../containers/AddToCart"
 
 import image from "../../images/image-product-1.jpg";
 
@@ -30,8 +27,7 @@ function Screen() {
             <Discount discountValue={"50%"}  />
             <ProductPrice hasDiscount={true} price="$250" css="col-span-2 text-right" />
           </div>
-          <Counter />
-          <AddToCardBtn content="Add to cart" icon={BasketIcon}  />
+          <AddToCartContainer />
         </section>
       </main>
     </div>
