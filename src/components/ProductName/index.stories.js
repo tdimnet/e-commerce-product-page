@@ -1,4 +1,4 @@
-import ProductName from "."
+import ProductName from ".";
 
 export default {
   title: "Typographies/ProductName",
@@ -10,4 +10,3 @@ export const Example = {
     name: "fall limited edition sneakers",
   },
 };
-

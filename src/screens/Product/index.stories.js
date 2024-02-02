@@ -1,4 +1,3 @@
-
 import ProductPage from ".";
 
 export default {

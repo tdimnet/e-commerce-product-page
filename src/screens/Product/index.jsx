@@ -4,9 +4,9 @@ import Navigation from "../../components/Navigation";
 import ProductDescription from "../../components/ProductDescription";
 import ProductImage from "../../components/ProductImage";
 import ProductName from "../../components/ProductName";
-import ProductPrice from "../../components/ProductPrice"
+import ProductPrice from "../../components/ProductPrice";
 
-import AddToCartContainer from "../../containers/AddToCart"
+import AddToCartContainer from "../../containers/AddToCart";
 
 import image from "../../images/image-product-1.jpg";
 
@@ -22,10 +22,14 @@ function Screen() {
           <BrandName name="sneaker company" css="mb-4" />
           <ProductName name="fall limited edition sneakers" css="mb-4" />
           <ProductDescription content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
-          <div className="grid grid-cols-4 items-center mt-3">
-            <ProductPrice hasDiscount={false} price="$125"  />
-            <Discount discountValue={"50%"}  />
-            <ProductPrice hasDiscount={true} price="$250" css="col-span-2 text-right" />
+          <div className="mt-3 grid grid-cols-4 items-center">
+            <ProductPrice hasDiscount={false} price="$125" />
+            <Discount discountValue={"50%"} />
+            <ProductPrice
+              hasDiscount={true}
+              price="$250"
+              css="col-span-2 text-right"
+            />
           </div>
           <AddToCartContainer />
         </section>

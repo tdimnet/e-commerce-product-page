@@ -8,8 +8,8 @@ import Button from "../../components/Button";
 import BasketIcon from "../../icons/Basket";
 
 function Container() {
-  const { addToCart } = useCart()
-    const [counter, setCounter] = useState(0);
+  const { addToCart } = useCart();
+  const [counter, setCounter] = useState(0);
 
   function handleCounter(operation) {
     if (operation === "minus" && counter > 0) {
@@ -20,7 +20,7 @@ function Container() {
   }
 
   function addProductToCart() {
-    addToCart(counter)
+    addToCart(counter);
   }
 
   return (

@@ -1,6 +1,9 @@
 function Component({ discountValue }) {
-  return <p className='bg-orange-100 inline py-1 px-2 rounded-lg font-bold text-orange-500'>{discountValue}</p>
+  return (
+    <p className="inline rounded-lg bg-orange-100 px-2 py-1 font-bold text-orange-500">
+      {discountValue}
+    </p>
+  );
 }
 
-export default Component
-
+export default Component;

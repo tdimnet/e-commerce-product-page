@@ -1,7 +1,10 @@
 function Component({ content, icon, onClick }) {
   if (icon) {
     return (
-      <button onClick={onClick} className="relative h-14 w-full rounded-md bg-orange-400 text-white">
+      <button
+        onClick={onClick}
+        className="relative h-14 w-full rounded-md bg-orange-400 text-white"
+      >
         <span className="absolute left-20">{icon({ color: "white" })}</span>
         {content}
       </button>
