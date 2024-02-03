@@ -2,13 +2,11 @@ import BrandName from "../../components/BrandName";
 import Discount from "../../components/Discount";
 import Navigation from "../../components/Navigation";
 import ProductDescription from "../../components/ProductDescription";
-import ProductImage from "../../components/ProductImage";
 import ProductName from "../../components/ProductName";
 import ProductPrice from "../../components/ProductPrice";
 
 import AddToCartContainer from "../../containers/AddToCart";
-
-import image from "../../images/image-product-1.jpg";
+import ProductImageContainer from "../../containers/ProductImage"
 
 function Screen() {
   return (
@@ -17,7 +15,7 @@ function Screen() {
         <Navigation />
       </div>
       <main className="md:grid md:grid-cols-2 md:max-w-6xl md:mx-auto">
-        <ProductImage src={image} alt="A sneaker" />
+        <ProductImageContainer />
         <section className="p-6 grid gap-4">
           <BrandName name="sneaker company" />
           <ProductName name="fall limited edition sneakers" />
