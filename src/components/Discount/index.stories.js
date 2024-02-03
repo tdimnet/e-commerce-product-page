@@ -1,12 +1,12 @@
-import Discount from "."
+import Discount from ".";
 
 export default {
-    title: "Components/Discount",
-    component: Discount
-}
+  title: "Components/Discount",
+  component: Discount,
+};
 
 export const Default = {
-    args: {
-        discountValue: 30
-    }
-}
+  args: {
+    discountValue: 30,
+  },
+};

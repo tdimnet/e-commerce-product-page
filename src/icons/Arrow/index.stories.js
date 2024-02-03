@@ -1,24 +1,23 @@
-import Arrow from '.'
+import Arrow from ".";
 
 export default {
-    title: "Icons/Arrow",
-    component: Arrow
-}
+  title: "Icons/Arrow",
+  component: Arrow,
+};
 
 export const DefaultIcon = {
-    args: {}
-}
+  args: {},
+};
 
 export const NextIcon = {
-    args: {
-        onClick: () => {}
-    }
-}
+  args: {
+    onClick: () => {},
+  },
+};
 
 export const PreviousIcon = {
-    args: {
-        onClick: () => {},
-        kind: "previous"
-    }
-}
-
+  args: {
+    onClick: () => {},
+    kind: "previous",
+  },
+};

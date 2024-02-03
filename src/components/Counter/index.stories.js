@@ -1,13 +1,13 @@
-import Counter from "."
+import Counter from ".";
 
 export default {
-    title: "Components/Counter",
-    component: Counter
-}
+  title: "Components/Counter",
+  component: Counter,
+};
 
 export const Default = {
-    args: {
-        onClick: () => {},
-        counter: 2
-    }
-}
+  args: {
+    onClick: () => {},
+    counter: 2,
+  },
+};

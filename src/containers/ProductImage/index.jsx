@@ -12,9 +12,16 @@ function Container() {
 
   return (
     <div className="relative">
-      <ArrowIcon css="absolute left-0 top-[50%] bg-white rounded-full h-10 w-10" onClick={() => handleIcons("previous")} kind="previous" />
+      <ArrowIcon
+        css="absolute left-0 top-[50%] bg-white rounded-full h-10 w-10"
+        onClick={() => handleIcons("previous")}
+        kind="previous"
+      />
       <ProductImage src={image} />
-      <ArrowIcon css="absolute right-0 top-[50%] bg-white rounded rounded-full h-10 w-10" onClick={() => handleIcons("next")} />
+      <ArrowIcon
+        css="absolute right-0 top-[50%] bg-white rounded rounded-full h-10 w-10"
+        onClick={() => handleIcons("next")}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 function Component({ content }) {
-    return <li className="hidden md:mr-8 md:block">{content}</li>
+  return <li className="md:mr-8">{content}</li>;
 }
 
-export default Component
+export default Component;

@@ -1,11 +1,27 @@
+import { useState } from "react";
+
 import UserImage from "../UserImage";
-import NavItem from "../NavItem"
+import NavItem from "../NavItem";
 
 import BasketIcon from "../../icons/Basket";
 import BurgerIcon from "../../icons/Burger";
 import LogoIcon from "../../icons/Logo";
 
 function Component() {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(true);
+
+  if (isMobileNavOpen) {
+    return (
+      <nav className="relative">
+        <ul className="d-flex absolute z-10">
+          <NavItem content="collections" />
+          <NavItem content="men" />
+          <NavItem content="women" />
+        </ul>
+      </nav>
+    );
+  }
+
   return (
     <nav className="max-w-6xl md:mx-auto md:border-b md:border-slate-300">
       <ul className="flex items-baseline justify-evenly md:items-center">
