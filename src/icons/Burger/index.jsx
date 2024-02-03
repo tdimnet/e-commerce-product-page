@@ -1,6 +1,7 @@
-function Icon() {
+function Icon( onClick ) {
   return (
     <svg
+      className="cursor-pointer"
       fill="none"
       height="15"
       viewBox="0 0 16 15"
