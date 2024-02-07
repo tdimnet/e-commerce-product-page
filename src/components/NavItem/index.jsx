@@ -1,5 +1,5 @@
 function Component({ content, css }) {
-  return <li className={`${css} md:mr-8`}>{content}</li>;
+  return <li className={`${css}`}>{content}</li>;
 }
 
 export default Component;
