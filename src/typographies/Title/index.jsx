@@ -1,3 +1,3 @@
 function Typography({ heading, content }) {}
 
-export default Typography
+export default Typography;

@@ -6,6 +6,7 @@ import NavItem from "../NavItem";
 import BasketIcon from "../../icons/Basket";
 import BurgerIcon from "../../icons/Burger";
 import LogoIcon from "../../icons/Logo";
+import CloseIcon from "../../icons/Cross";
 
 function Component() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(true);
@@ -13,10 +14,13 @@ function Component() {
   if (isMobileNavOpen) {
     return (
       <nav className="relative">
-        <ul className="d-flex absolute z-10 -top-6 -left-6 bg-white w-64">
-          <NavItem content="collections" />
-          <NavItem content="men" />
-          <NavItem content="women" />
+        <ul className="d-flex absolute -left-6 -top-6 z-10 min-h-screen w-60 bg-white p-6">
+          <CloseIcon css="mb-14" onClick={() => console.log("====")} />
+          <NavItem content="collections" css="mb-5" />
+          <NavItem content="men" css="mb-5" />
+          <NavItem content="women" css="mb-5" />
+          <NavItem content="about" css="mb-5" />
+          <NavItem content="contact" />
         </ul>
       </nav>
     );
