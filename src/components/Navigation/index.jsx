@@ -13,7 +13,7 @@ function Component() {
   if (isMobileNavOpen) {
     return (
       <nav className="relative">
-        <ul className="d-flex absolute z-10">
+        <ul className="d-flex absolute z-10 -top-6 -left-6 bg-white w-64">
           <NavItem content="collections" />
           <NavItem content="men" />
           <NavItem content="women" />
