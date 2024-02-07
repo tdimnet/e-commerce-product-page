@@ -9,12 +9,12 @@ import LogoIcon from "../../icons/Logo";
 import CloseIcon from "../../icons/Cross";
 
 function Component() {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(true);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <nav>
-      <div className="max-w-6xl md:mx-auto md:border-b md:border-slate-300">
-        <ul className="flex items-baseline justify-evenly md:items-center">
+    <nav className="relative">
+      <div className="max-w-6xl md:mx-auto md:pb-2 md:border-b md:border-slate-300">
+        <ul className="flex items-center justify-evenly md:items-center">
           <li className="mr-4 md:hidden">
             <BurgerIcon onClick={() => setIsMobileNavOpen(true)} />
           </li>
@@ -37,7 +37,7 @@ function Component() {
         </ul>
       </div>
       {isMobileNavOpen && (
-        <div className="relative">
+        <div>
           <ul className="d-flex absolute -left-6 -top-6 z-20 min-h-screen w-60 bg-white p-6">
             <CloseIcon css="mb-14" onClick={() => setIsMobileNavOpen(false)} />
             <NavItem content="collections" css="mb-5" />
