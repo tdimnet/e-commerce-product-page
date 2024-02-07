@@ -14,14 +14,15 @@ function Component() {
   if (isMobileNavOpen) {
     return (
       <nav className="relative">
-        <ul className="d-flex absolute -left-6 -top-6 z-10 min-h-screen w-60 bg-white p-6">
-          <CloseIcon css="mb-14" onClick={() => console.log("====")} />
+        <ul className="d-flex absolute -left-6 -top-6 z-20 min-h-screen w-60 bg-white p-6">
+          <CloseIcon css="mb-14" onClick={() => setIsMobileNavOpen(false)} />
           <NavItem content="collections" css="mb-5" />
           <NavItem content="men" css="mb-5" />
           <NavItem content="women" css="mb-5" />
           <NavItem content="about" css="mb-5" />
           <NavItem content="contact" />
         </ul>
+        <div className="absolute min-h-screen min-w-full bg-black/70 z-10 -top-6 -bottom-6 -left-6 -right-6" />
       </nav>
     );
   }
