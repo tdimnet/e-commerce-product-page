@@ -3,6 +3,8 @@ import { useState } from 'react'
 import ProductImage from "../../components/ProductImage";
 import ArrowIcon from "../../icons/Arrow";
 
+import imagesHandlerUtil from "../../utils/carrouselImagesHandler"
+
 import firstImage from "../../images/image-product-1.jpg";
 import secondImage from "../../images/image-product-2.jpg";
 import thirdImage from "../../images/image-product-3.jpg";
@@ -14,9 +16,9 @@ function Container() {
   const [ image, setImage ] = useState(IMAGES[0])
 
   function onChangeImage(kind) {
-    console.log("=====");
-    console.log(kind);
-    console.log("=====");
+    const currentIndex = IMAGES.indexOf(image)
+
+    imagesHandlerUtil(IMAGES.length, currentIndex, kind)
   }
 
   return (
