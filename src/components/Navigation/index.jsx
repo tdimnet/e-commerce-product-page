@@ -13,7 +13,7 @@ function Component() {
 
   return (
     <nav className="relative">
-      <div className="max-w-6xl md:mx-auto md:pb-2 md:border-b md:border-slate-300">
+      <div className="max-w-6xl md:mx-auto md:border-b md:border-slate-300 md:pb-2">
         <ul className="flex items-center justify-evenly md:items-center">
           <li className="mr-4 md:hidden">
             <BurgerIcon onClick={() => setIsMobileNavOpen(true)} />

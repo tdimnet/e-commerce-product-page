@@ -1,25 +1,25 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 import ProductImage from "../../components/ProductImage";
 import ArrowIcon from "../../icons/Arrow";
 
-import imagesHandlerUtil from "../../utils/carrouselImagesHandler"
+import imagesHandlerUtil from "../../utils/carrouselImagesHandler";
 
 import firstImage from "../../images/image-product-1.jpg";
 import secondImage from "../../images/image-product-2.jpg";
 import thirdImage from "../../images/image-product-3.jpg";
 import fourthImage from "../../images/image-product-4.jpg";
 
-const IMAGES = [firstImage, secondImage, thirdImage, fourthImage]
+const IMAGES = [firstImage, secondImage, thirdImage, fourthImage];
 
 function Container() {
-  const [ image, setImage ] = useState(IMAGES[0])
+  const [image, setImage] = useState(IMAGES[0]);
 
   function onChangeImage(kind) {
-    const currentIndex = IMAGES.indexOf(image)
-    const newImageIndex = imagesHandlerUtil(IMAGES.length, currentIndex, kind)
+    const currentIndex = IMAGES.indexOf(image);
+    const newImageIndex = imagesHandlerUtil(IMAGES.length, currentIndex, kind);
 
-    setImage(IMAGES[newImageIndex])
+    setImage(IMAGES[newImageIndex]);
   }
 
   return (
