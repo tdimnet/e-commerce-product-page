@@ -17,8 +17,9 @@ function Container() {
 
   function onChangeImage(kind) {
     const currentIndex = IMAGES.indexOf(image)
+    const newImageIndex = imagesHandlerUtil(IMAGES.length, currentIndex, kind)
 
-    imagesHandlerUtil(IMAGES.length, currentIndex, kind)
+    setImage(IMAGES[newImageIndex])
   }
 
   return (
