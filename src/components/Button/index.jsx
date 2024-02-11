@@ -12,7 +12,7 @@ function Component({ content, icon, onClick }) {
   }
 
   return (
-    <button className="h-14 w-80 rounded-md bg-orange-400 text-white">
+    <button onClick={onClick}  className="h-14 w-80 rounded-md bg-orange-400 text-white">
       {content}
     </button>
   );
