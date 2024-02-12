@@ -1,9 +1,19 @@
+import { useCart } from "../../contexts/Cart";
+
 function Component({ css }) {
+  const { cart } = useCart();
+
+  console.log("======");
+  console.log(cart);
+  console.log("======");
+
   return (
-    <div className={`${css} bg-white w-full py-6 rounded-lg`}>
+    <div className={`${css} w-full rounded-lg bg-white py-6`}>
       <p className="mb-6 px-6">Cart</p>
       <hr className="mb-6" />
-      <p className="flex items-center justify-center h-32">Your cart is empty</p>
+      <p className="flex h-32 items-center justify-center">
+        Your cart is empty
+      </p>
     </div>
   );
 }
