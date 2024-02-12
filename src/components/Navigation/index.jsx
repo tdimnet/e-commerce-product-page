@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import UserImage from "../UserImage";
 import NavItem from "../NavItem";
+import Dropdown from "../Dropdown"
 
 import BasketIcon from "../../icons/Basket";
 import BurgerIcon from "../../icons/Burger";
@@ -29,7 +30,7 @@ function Component() {
             <NavItem content="contact" />
           </ul>
           <li className="mr-6 md:ml-auto">
-            <BasketIcon />
+            <BasketIcon onClick={() => console.log("====")} />
           </li>
           <li>
             <UserImage />
@@ -49,6 +50,7 @@ function Component() {
           <div className="absolute -bottom-6 -left-6 -right-6 -top-6 z-10 min-h-screen min-w-full bg-black/70" />
         </div>
       )}
+      <Dropdown css="absolute left-0 top-0 z-10 top-20" />
     </nav>
   );
 }

@@ -1,4 +1,4 @@
-function Icon({ color }) {
+function Icon({ color, onClick }) {
   function handleIconColor(color) {
     switch (color) {
       case "white":
@@ -10,8 +10,10 @@ function Icon({ color }) {
 
   return (
     <svg
+      className="cursor-pointer"
       fill="none"
       height="20"
+      onClick={onClick}
       viewBox="0 0 22 20"
       width="22"
       xmlns="http://www.w3.org/2000/svg"
