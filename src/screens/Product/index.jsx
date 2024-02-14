@@ -11,7 +11,7 @@ import ProductImageContainer from "../../containers/ProductImage";
 function Screen() {
   return (
     <div>
-      <div className="p-6">
+      <div className="p-6 md:mb-24">
         <Navigation />
       </div>
       <main className="md:mx-auto md:grid md:max-w-6xl md:grid-cols-2">
