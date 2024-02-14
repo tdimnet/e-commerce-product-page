@@ -38,7 +38,7 @@ function Container() {
       </div>
       <div className="hidden md:grid md:grid-cols-4 gap-8">
         {
-          IMAGES.map(image => <ProductImage src={image} css="rounded" />)
+          IMAGES.map((image, index) => <ProductImage src={image} css="rounded cursor-pointer" onClick={() => setImage(IMAGES[index])} />)
         }
       </div>
     </div>
