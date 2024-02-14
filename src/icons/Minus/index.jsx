@@ -1,4 +1,4 @@
-function Icon({ onClick }) {
+function Icon({ onClick, css }) {
   return (
     <svg
       onClick={onClick}

@@ -26,19 +26,19 @@ function Container() {
     <div className="h-[300px] md:h-[445px] md:w-[445px]">
       <div className="relative md:mb-8">
         <ArrowIcon
-          css="absolute left-0 top-[50%] bg-white rounded-full h-10 w-10 flex items-center justify-center"
+          css="absolute left-0 top-[50%] bg-white rounded-full h-10 w-10 flex items-center justify-center md:hidden"
           onClick={() => onChangeImage("previous")}
           kind="previous"
         />
         <ProductImage src={image} />
         <ArrowIcon
-          css="absolute right-0 top-[50%] bg-white rounded rounded-full h-10 w-10 flex items-center justify-center"
+          css="absolute right-0 top-[50%] bg-white rounded rounded-full h-10 w-10 flex items-center justify-center md:hidden"
           onClick={() => onChangeImage("next")}
         />
       </div>
       <div className="hidden md:grid md:grid-cols-4 gap-8">
         {
-          IMAGES.map((image, index) => <ProductImage src={image} css="rounded cursor-pointer" onClick={() => setImage(IMAGES[index])} />)
+          IMAGES.map((image, index) => <ProductImage src={image} css="rounded cursor-pointer hover:opacity-80" onClick={() => setImage(IMAGES[index])} />)
         }
       </div>
     </div>

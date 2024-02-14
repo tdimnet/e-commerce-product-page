@@ -24,14 +24,14 @@ function Container() {
   }
 
   return (
-    <>
+    <div className="md:grid md:grid-cols-[157px_272px] md:gap-3 md:items-center">
       <Counter onClick={handleCounter} counter={counter} />
       <Button
         onClick={addProductToCart}
         content="Add to Cart"
         icon={BasketIcon}
       />
-    </>
+    </div>
   );
 }
 
