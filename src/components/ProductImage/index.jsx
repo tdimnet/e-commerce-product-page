@@ -1,7 +1,7 @@
-function Component({ src, alt }) {
+function Component({ src, alt, css }) {
   return (
     <img
-      className="w-full h-full object-cover"
+      className={`${css} w-full h-full object-cover`}
       src={src}
       alt={alt}
     />

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import ProductImages from "../../layouts/ProductImages"
 import ProductImage from "../../components/ProductImage";
 import ArrowIcon from "../../icons/Arrow";
 
@@ -24,8 +23,8 @@ function Container() {
   }
 
   return (
-    <div>
-      <div className="relative h-[300px] md:h-[445px] md:w-[445px]">
+    <div className="h-[300px] md:h-[445px] md:w-[445px]">
+      <div className="relative md:mb-8">
         <ArrowIcon
           css="absolute left-0 top-[50%] bg-white rounded-full h-10 w-10 flex items-center justify-center"
           onClick={() => onChangeImage("previous")}
@@ -37,11 +36,11 @@ function Container() {
           onClick={() => onChangeImage("next")}
         />
       </div>
-      <ProductImages>
+      <div className="hidden md:grid md:grid-cols-4 gap-8">
         {
-          IMAGES.map(image => <ProductImage src={image} />)
+          IMAGES.map(image => <ProductImage src={image} css="rounded" />)
         }
-      </ProductImages>
+      </div>
     </div>
   );
 }
