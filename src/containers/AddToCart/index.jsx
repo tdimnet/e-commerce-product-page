@@ -1,11 +1,9 @@
 import { useState } from "react";
 
 import { useCart } from "../../contexts/Cart";
-
-import Counter from "../../components/Counter";
-import Button from "../../components/Button";
-
 import BasketIcon from "../../icons/Basket";
+import Button from "../../components/Button";
+import Counter from "../../components/Counter";
 
 function Container() {
   const { addToCart } = useCart();
@@ -24,7 +22,7 @@ function Container() {
   }
 
   return (
-    <div className="md:grid md:grid-cols-[157px_272px] md:gap-3 md:items-center">
+    <div className="grid gap-3 md:grid-cols-[157px_272px] md:items-center">
       <Counter onClick={handleCounter} counter={counter} />
       <Button
         onClick={addProductToCart}

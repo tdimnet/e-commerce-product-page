@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-import UserImage from "../UserImage";
-import NavItem from "../NavItem";
-import Dropdown from "../Dropdown";
-
-import BasketIcon from "../../icons/Basket";
+import BasketWithNotification from "../../containers/BasketWithNotification"
 import BurgerIcon from "../../icons/Burger";
-import LogoIcon from "../../icons/Logo";
 import CloseIcon from "../../icons/Cross";
+import Dropdown from "../Dropdown";
+import LogoIcon from "../../icons/Logo";
+import NavItem from "../NavItem";
+import UserImage from "../UserImage";
 
 function Component() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -31,7 +30,7 @@ function Component() {
             <NavItem content="contact" />
           </ul>
           <li className="mr-6 md:ml-auto">
-            <BasketIcon onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
+            <BasketWithNotification onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
           </li>
           <li>
             <UserImage />
