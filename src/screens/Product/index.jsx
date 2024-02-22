@@ -27,10 +27,6 @@ function Screen() {
     fetchData();
   }, []);
 
-  console.log("====");
-  console.log(product);
-  console.log("====");
-
   return (
     <div className="pb-4 md:pb-12">
       <div className="p-6 md:mb-16">
@@ -39,7 +35,7 @@ function Screen() {
       {product && (
         <main className="md:mx-auto md:flex md:justify-center">
           <div className="md:mr-32 md:w-[445px]">
-            <ProductImageContainer />
+            <ProductImageContainer images={product.images} />
           </div>
           <section className="p-4 md:flex md:w-[445px] md:flex-col md:justify-center">
             <BrandName name={product.brand} css="mb-4 md:mb-8" />
@@ -49,15 +45,19 @@ function Screen() {
               content={product.description}
             />
             <div className="relative mb-4 flex items-baseline md:mb-8 md:h-16">
-              <ProductPrice hasDiscount={false} price="$125.00" css="mr-4" />
-              <Discount discountValue={"50%"} />
+              <ProductPrice
+                hasDiscount={false}
+                price={`${product.currency}${(product.price * product.discount).toFixed(2)}`}
+                css="mr-4"
+              />
+              <Discount discountValue={`${product.discount * 100}%`} />
               <ProductPrice
                 hasDiscount={true}
-                price="$250.00"
+                price={`${product.currency}${product.price}`}
                 css="ml-auto md:absolute md:bottom-0 md:left-0"
               />
             </div>
-            <AddToCartContainer />
+            <AddToCartContainer productImage={product.images[0]} productName={product.product} productPrice={`${product.currency}${(product.price * product.discount).toFixed(2)}`} />
           </section>
         </main>
       )}

@@ -5,7 +5,7 @@ import BasketIcon from "../../icons/Basket";
 import Button from "../../components/Button";
 import Counter from "../../components/Counter";
 
-function Container() {
+function Container({ productName, productPrice, productImage }) {
   const { addToCart } = useCart();
   const [counter, setCounter] = useState(0);
 
@@ -18,7 +18,13 @@ function Container() {
   }
 
   function addProductToCart() {
-    addToCart(counter);
+    const product = {
+      productImage,
+      productName,
+      productPrice
+    }
+
+    addToCart(product);
   }
 
   return (

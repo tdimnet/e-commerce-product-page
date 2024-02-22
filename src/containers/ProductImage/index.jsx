@@ -5,21 +5,14 @@ import ArrowIcon from "../../icons/Arrow";
 
 import imagesHandlerUtil from "../../utils/carrouselImagesHandler";
 
-import firstImage from "../../images/image-product-1.jpg";
-import secondImage from "../../images/image-product-2.jpg";
-import thirdImage from "../../images/image-product-3.jpg";
-import fourthImage from "../../images/image-product-4.jpg";
-
-const IMAGES = [firstImage, secondImage, thirdImage, fourthImage];
-
-function Container() {
-  const [image, setImage] = useState(IMAGES[0]);
+function Container({ images }) {
+  const [image, setImage] = useState(images[0]);
 
   function onChangeImage(kind) {
-    const currentIndex = IMAGES.indexOf(image);
-    const newImageIndex = imagesHandlerUtil(IMAGES.length, currentIndex, kind);
+    const currentIndex = images.indexOf(image);
+    const newImageIndex = imagesHandlerUtil(images.length, currentIndex, kind);
 
-    setImage(IMAGES[newImageIndex]);
+    setImage(images[newImageIndex]);
   }
 
   return (
@@ -30,19 +23,19 @@ function Container() {
           onClick={() => onChangeImage("previous")}
           kind="previous"
         />
-        <ProductImage src={image} />
+        <ProductImage src={`/images/${image}`} />
         <ArrowIcon
           css="absolute right-0 top-[50%] bg-white rounded rounded-full h-10 w-10 flex items-center justify-center md:hidden"
           onClick={() => onChangeImage("next")}
         />
       </div>
       <div className="hidden gap-8 md:grid md:grid-cols-4">
-        {IMAGES.map((image, index) => (
+        {images.map((image, index) => (
           <ProductImage
             key={image}
-            src={image}
+            src={`/images/${image}`}
             css="rounded cursor-pointer hover:opacity-80"
-            onClick={() => setImage(IMAGES[index])}
+            onClick={() => setImage(images[index])}
           />
         ))}
       </div>

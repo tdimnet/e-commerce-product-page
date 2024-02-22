@@ -5,10 +5,6 @@ import BasketIcon from "../../icons/Basket";
 function Container({ onClick }) {
   const { cart } = useCart();
 
-  console.log("=====");
-  console.log(cart);
-  console.log("=====");
-
   return (
     <div className="relative">
       {cart.length > 0 && (
