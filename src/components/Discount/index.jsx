@@ -1,6 +1,6 @@
 function Component({ discountValue }) {
   return (
-    <p className="inline rounded-lg bg-orange-100 px-2 py-1 font-bold text-orange-500">
+    <p className="rounded-lg bg-orange-100 h-7 w-14 font-bold text-orange-500 flex items-center justify-center">
       {discountValue}
     </p>
   );

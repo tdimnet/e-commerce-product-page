@@ -20,15 +20,15 @@ function Screen() {
         <ProductImageContainer />
         <section className="p-4 md:flex md:justify-center md:flex-col">
           <BrandName name="sneaker company" css="mb-4 md:mb-8" />
-          <ProductName name="fall limited edition sneakers" css="mb-4" />
-          <ProductDescription css="mb-4" content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
-          <div className="grid grid-cols-4 items-center mb-4">
-            <ProductPrice hasDiscount={false} price="$125" />
+          <ProductName name="fall limited edition sneakers" css="mb-4 md:mb-8" />
+          <ProductDescription css="mb-4 md:mb-8" content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
+          <div className="flex items-baseline mb-4 md:mb-8">
+            <ProductPrice hasDiscount={false} price="$125.00" css="mr-4" />
             <Discount discountValue={"50%"} />
             <ProductPrice
               hasDiscount={true}
-              price="$250"
-              css="col-span-2 text-right"
+              price="$250.00"
+              css="ml-auto"
             />
           </div>
           <AddToCartContainer />
