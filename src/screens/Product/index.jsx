@@ -12,17 +12,17 @@ import ProductImageContainer from "../../containers/ProductImage";
 
 function Screen() {
   return (
-    <div>
+    <div className="pb-4 md:pb-12">
       <div className="p-6 md:mb-16">
         <Navigation />
       </div>
       <main className="md:mx-auto md:grid md:max-w-6xl md:grid-cols-2">
         <ProductImageContainer />
-        <section className="grid gap-4 p-6 md:w-[445px]">
-          <BrandName name="sneaker company" />
-          <ProductName name="fall limited edition sneakers" />
-          <ProductDescription content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
-          <div className="grid grid-cols-4 items-center">
+        <section className="p-4 md:flex md:justify-center md:flex-col">
+          <BrandName name="sneaker company" css="mb-4 md:mb-8" />
+          <ProductName name="fall limited edition sneakers" css="mb-4" />
+          <ProductDescription css="mb-4" content="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer." />
+          <div className="grid grid-cols-4 items-center mb-4">
             <ProductPrice hasDiscount={false} price="$125" />
             <Discount discountValue={"50%"} />
             <ProductPrice
