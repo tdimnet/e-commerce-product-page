@@ -5,7 +5,7 @@ import BasketIcon from "../../icons/Basket";
 function Container({ onClick }) {
   const { cart } = useCart();
 
-  console.log(cart)
+  console.log(cart);
 
   return (
     <div className="relative">

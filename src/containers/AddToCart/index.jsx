@@ -21,10 +21,10 @@ function Container({ productName, productPrice, productImage }) {
     const product = {
       productImage,
       productName,
-      productPrice
-    }
+      productPrice,
+    };
 
-    const products = new Array(counter).fill(product)
+    const products = new Array(counter).fill(product);
     addToCart(products);
   }
 

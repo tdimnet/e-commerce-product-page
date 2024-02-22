@@ -47,7 +47,9 @@ function Screen() {
             <div className="relative mb-4 flex items-baseline md:mb-8 md:h-16">
               <ProductPrice
                 hasDiscount={false}
-                price={`${product.currency}${(product.price * product.discount).toFixed(2)}`}
+                price={`${product.currency}${(
+                  product.price * product.discount
+                ).toFixed(2)}`}
                 css="mr-4"
               />
               <Discount discountValue={`${product.discount * 100}%`} />
@@ -57,7 +59,13 @@ function Screen() {
                 css="ml-auto md:absolute md:bottom-0 md:left-0"
               />
             </div>
-            <AddToCartContainer productImage={product.images[0]} productName={product.product} productPrice={`${product.currency}${(product.price * product.discount).toFixed(2)}`} />
+            <AddToCartContainer
+              productImage={product.images[0]}
+              productName={product.product}
+              productPrice={`${product.currency}${(
+                product.price * product.discount
+              ).toFixed(2)}`}
+            />
           </section>
         </main>
       )}
