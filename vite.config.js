@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   root: './src',
-  base: '/'
+  base: 'https://tdimnet.github.io/e-commerce-product-page/'
 })
 
