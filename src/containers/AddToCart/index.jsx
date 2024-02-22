@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 import Counter from "../../components/Counter";
 
 function Container({ productName, productPrice, productImage }) {
-  const { addToCart } = useCart();
+  const { addToCart, cart } = useCart();
   const [counter, setCounter] = useState(0);
 
   function handleCounter(operation) {
@@ -24,7 +24,8 @@ function Container({ productName, productPrice, productImage }) {
       productPrice
     }
 
-    addToCart(product);
+    const products = new Array(counter).fill(product)
+    addToCart(products);
   }
 
   return (
