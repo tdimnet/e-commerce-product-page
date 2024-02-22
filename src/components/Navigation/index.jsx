@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import BasketWithNotification from "../../containers/BasketWithNotification"
+import BasketWithNotification from "../../containers/BasketWithNotification";
 import BurgerIcon from "../../icons/Burger";
 import CloseIcon from "../../icons/Cross";
 import Dropdown from "../Dropdown";
@@ -30,7 +30,9 @@ function Component() {
             <NavItem content="contact" />
           </ul>
           <li className="mr-6 md:ml-auto">
-            <BasketWithNotification onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
+            <BasketWithNotification
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            />
           </li>
           <li>
             <UserImage />

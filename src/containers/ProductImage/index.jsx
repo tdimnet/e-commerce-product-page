@@ -36,10 +36,15 @@ function Container() {
           onClick={() => onChangeImage("next")}
         />
       </div>
-      <div className="hidden md:grid md:grid-cols-4 gap-8">
-        {
-          IMAGES.map((image, index) => <ProductImage key={image} src={image} css="rounded cursor-pointer hover:opacity-80" onClick={() => setImage(IMAGES[index])} />)
-        }
+      <div className="hidden gap-8 md:grid md:grid-cols-4">
+        {IMAGES.map((image, index) => (
+          <ProductImage
+            key={image}
+            src={image}
+            css="rounded cursor-pointer hover:opacity-80"
+            onClick={() => setImage(IMAGES[index])}
+          />
+        ))}
       </div>
     </div>
   );
